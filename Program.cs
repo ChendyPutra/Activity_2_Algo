@@ -8,7 +8,7 @@ namespace Quicsort
 {
     class Program
     {
-        private int[] arr = new int[20];
+        private int[]arr = new int[20];
         private int cmp_count = 0;
         private int mov_count = 0;
 
@@ -33,9 +33,18 @@ namespace Quicsort
             for(int i = 0; i < n; i++)
             {
                 Console.Write("<" + (i + 1) + ">");
-                string s = Console.ReadLine();
+                string s1 = Console.ReadLine();
                 arr[i] = Int32.Parse(s1);
             }
+        }
+        
+        void swap(int x, int y)
+        {
+            int temp;
+
+            temp = arr[x];
+            arr[x] = arr[y];
+            arr[y] = temp;
         }
     }
 }
