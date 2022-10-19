@@ -14,13 +14,5 @@ namespace Quicsort
 
         private int n;
 
-        void input()
-        {
-            while (true)
-            {
-                Console.Write("Enter The Number Of Elements in The Array :");
-     
-            }
-        }
     }
 }
