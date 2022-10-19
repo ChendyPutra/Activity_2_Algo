@@ -107,5 +107,14 @@ namespace Quicsort
         {
             return (n);
         }
+        static void Main(string[] args)
+        {
+            Program myList = new Program();
+            myList.input();
+            myList.q_sort(0, myList.getsize() - 1);
+            myList.display();
+            Console.WriteLine("\n\nPress Enter to Exit.");
+            Console.Read();
+        }
     }
 }
