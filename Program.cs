@@ -103,5 +103,9 @@ namespace Quicsort
             Console.WriteLine("\nNumber of Comparisons: " + cmp_count);
             Console.WriteLine("\nNumber of Data Movements: " + cmp_count);
         }
+        int getsize()
+        {
+            return (n);
+        }
     }
 }
